@@ -47,8 +47,13 @@ def jacobi_all_x(A, b, n, iterations):
     return all_x
 
 n = int(input("Enter n: "))
+
 A = fill_2D_table(n)
+print("\t\n")
+
 B = fill_1D_table(n)
+print("\t\n")
+
 OK = checking(A, n)
 
 if OK == 0:
