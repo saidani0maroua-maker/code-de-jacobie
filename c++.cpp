@@ -2,7 +2,7 @@
 #include <cmath> 
 using namespace std; 
  
-#define N 10  // Maximum size of the matrix/vector 
+const int N=10;  // Maximum size of the matrix/vector 
  
 // Function to fill the matrix A and vector b 
 bool fillMatrix(double A[N][N], double b[N], int &n) { 
