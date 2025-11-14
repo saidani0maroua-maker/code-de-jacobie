@@ -33,7 +33,7 @@ def checking(tab2D, n):
 
 def jacobi_all_x(A, b, n, iterations):
     x = np.zeros(n)
-    all_x = np.zeros((iterations, n))
+    all_x = np.zeros((iterations, n),dtype=float)
     for k in range(iterations):
         x_new = np.zeros(n)
         for i in range(n):
