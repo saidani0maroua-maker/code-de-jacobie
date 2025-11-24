@@ -6,7 +6,7 @@ const int N= 10;  // Maximum size of the matrix/vector
 const double EPS = 0.1; // Convergence tolerance (epsilon)
 
 // Function to fill matrix A and vector b
-bool fillMatrix(double A[N][N], double b[N], int &n) {
+void fillMatrix(double A[N][N], double b[N], int &n) {
     // Ask user for number of equations
     do {
         cout << "Enter the number of equations (n): ";
@@ -25,8 +25,6 @@ bool fillMatrix(double A[N][N], double b[N], int &n) {
     cout << "Enter elements of vector b:\n";
     for (int i = 0; i < n; ++i)
         cin >> b[i];
-
-    return true;
 }
 
 //  Make matrix diagonally dominant
